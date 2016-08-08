@@ -18,7 +18,7 @@
 
 # Include required recipes
 include_recipe 'build-essential'
-include_recipe 'mysql-chef_gem'
+include_recipe 'mysql2_chef_gem'
 include_recipe 'mysql::server'
 
 node['qmailtoaster']['packages']['backend']['required'].each do |pkg|

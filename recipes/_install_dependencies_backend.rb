@@ -21,6 +21,10 @@ include_recipe 'build-essential'
 include_recipe 'mysql2_chef_gem'
 include_recipe 'mysql::server'
 
+mysql2_chef_gem 'default' do
+  action :install
+end
+
 node['qmailtoaster']['packages']['backend']['required'].each do |pkg|
   package pkg
 end

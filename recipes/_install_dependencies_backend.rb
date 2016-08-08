@@ -18,7 +18,6 @@
 
 # Include required recipes
 include_recipe 'build-essential'
-include_recipe 'mysql2_chef_gem'
 include_recipe 'mysql::server'
 
 mysql2_chef_gem 'default' do
